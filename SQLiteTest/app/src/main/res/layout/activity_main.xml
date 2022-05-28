@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:text="수업명:"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:textSize="20dp"
+        android:text="인원:"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textview1"
+        android:layout_alignBottom="@id/textview1"
+        android:layout_toRightOf="@id/textview1" />
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textview2"
+        android:layout_alignBottom="@id/textview2"
+        android:phoneNumber="true"
+        android:layout_toRightOf="@id/textview2" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FF7F7F7F"
+            android:layout_weight="1"
+            android:onClick="clear"
+            android:text="초기" />
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FF7F7F7F"
+            android:layout_weight="1"
+            android:onClick="insert"
+            android:text="입력" />
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FF7F7F7F"
+            android:layout_weight="1"
+            android:onClick="update"
+            android:text="수정" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FF7F7F7F"
+            android:layout_weight="1"
+            android:onClick="delete"
+            android:text="삭제" />
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FF7F7F7F"
+            android:layout_weight="1"
+            android:onClick="select"
+            android:text="조회" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/titleboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF00"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/countboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF00"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>

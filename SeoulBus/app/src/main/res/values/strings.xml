@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">서울버스</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

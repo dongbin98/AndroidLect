@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:title="수업"/>
+    <item
+        android:id="@+id/add"
+        android:title="멈춰"/>
+    <item
+        android:id="@+id/edit"
+        android:title="시발"/>
+</menu>

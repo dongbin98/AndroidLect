@@ -1,0 +1,2 @@
+rootProject.name = "PublicDataTest_1"
+include ':app'

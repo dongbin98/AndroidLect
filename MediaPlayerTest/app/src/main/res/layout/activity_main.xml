@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mp3player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Sound Player"
+        android:onClick="goMP3"/>
+
+    <Button
+        android:id="@+id/recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Sound Recorder"
+        android:onClick="goRecord"/>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture it!"
+        android:onClick="goCapture"/>
+
+    <Button
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Video Player"
+        android:onClick="goVideo"/>
+
+    <Button
+        android:id="@+id/vrecorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Video Recorder"
+        android:onClick="goRecord2"/>
+
+</LinearLayout>

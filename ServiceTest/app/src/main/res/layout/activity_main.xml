@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Service1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Started Service with Service"
+        android:onClick="goService1"/>
+
+    <Button
+        android:id="@+id/Service2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Started Service with IntentService"
+        android:onClick="goService2"/>
+
+    <Button
+        android:id="@+id/Service3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bound Service with Binder"
+        android:onClick="goService3"/>
+
+    <Button
+        android:id="@+id/Service4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bound Service with Messenger"
+        android:onClick="goService4"/>
+
+    <Button
+        android:id="@+id/Service5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS READER"
+        android:onClick="goService5"/>
+
+</LinearLayout>
